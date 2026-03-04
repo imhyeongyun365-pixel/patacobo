@@ -4,46 +4,35 @@ const img = (path) => `/img/${path}`
 export const headerData = {
 
     logo: {
-        src: img('logo.svg'),
-        alt: 'TOCOBO',
+        src: img('header-logo-img.png'),
+        alt: 'PATACOBO',
         href: '/'
     },
     menus: [
         {
-            id: 'hero',
-            label: 'hero',
-            href: '#hero',
+            id: 'Shop',
+            label: 'Shop',
+            href: '#Shop',
             type: 'section'
         },
         {
-            id: 'follow',
-            label: 'follow',
-            href: '#follow',
+            id: 'Sports',
+            label: 'Sports',
+            href: '#Sports',
             type: 'section'
         },
         {
-            id: 'collection',
-            label: 'collection',
-            href: '#collection',
+            id: 'Stories',
+            label: 'Stories',
+            href: '#Stories',
             type: 'section'
-        },
-        {
-            id: 'skincare',
-            label: 'skincare',
-            href: '#skincare',
-            type: 'section'
-        },
-        {
-            id: 'instargram',
-            label: 'instargram',
-            href: '#instargram',
-            type: 'section'
-        },
+        }
+
     ],
     utils: [
-        { id: "search", label: "검색", icon: img("icon_search.svg"), href: "#" },
-        { id: "account", label: "마이", icon: img("icon_myp.svg"), href: "#" },
-        { id: "cart", label: "장바", icon: img("icon_cart.svg"), href: "#" },
+        { id: "search", label: "검색", icon: img("header-right-img1_D.png"), href: "#" },
+        { id: "account", label: "마이", icon: img("header-right-img2_D.png"), href: "#" },
+        { id: "cart", label: "장바", icon: img("header-right-img3_D.png"), href: "#" },
     ],
     // 상단 공지/배너 (TopBanner용)
     topBanner: {
