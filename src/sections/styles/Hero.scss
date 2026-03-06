@@ -3,11 +3,13 @@
 
     h2.tit {
         font-size: clamp(5rem, 6vw,7.3rem);
+        font-weight: 500;
     }
     .swiper {
         height: 100%;
 
     }
+    
 
     .hero-slide {
         background-repeat: no-repeat;
@@ -35,6 +37,7 @@
                 }
             }
             p.txt {
+                
                 font-size: 2.1rem;
                 margin-top: 4rem;
                 @media screen and (max-width:1111px) {
@@ -49,11 +52,11 @@
 
         &.hs-1 {
             h2.tit {
-                color: var(--main-slider01-tit)
+                color: #fff
             }
 
             p.txt {
-                color: var(--main-slider01-sub)
+                color: #fff
             }
 
             a.btn {
@@ -111,15 +114,6 @@
             }
         }
 
-        &.hs-4 {
-            h2.tit {
-                color: var(--main-slider04-tit)
-            }
-
-            p.txt {
-                color: var(--main-slider04-sub)
-            }
-        }
     }
 
     .hero-nav{
