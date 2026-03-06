@@ -10,8 +10,8 @@ import SkinCare from './sections/SkinCare'
 import Instargram from './sections/Instargram'
 import TopBanner from './components/TopBanner'
 import FixedTopBtn from './components/FixedTopBtn'
-import Aos from 'aos';
-import './aos/dist/aos.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function App() {
 
   const [topBanner, setTopBanner]=useState('')
@@ -19,7 +19,7 @@ function App() {
   const [mNavOpen, setMNavOpen] = useState(false)
   useEffect(() => {
 
-    Aos.init({
+    AOS.init({
       duration:400,
       easing:'ease'
     });
