@@ -92,7 +92,7 @@ const Footer = () => {
               
               </span>
             </h4>
-            <div className="hidden">
+            <div className="hidden" ref={hiddenContentRef}>
               <p className="cs-box">
                 <a href={customerCenterData.tel.href}>
                   {customerCenterData.tel.value}
