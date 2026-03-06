@@ -45,7 +45,7 @@ const Footer = () => {
       el.addEventListener('transitionend', onTransitionEnd)
     } else {
       
-      // el.style.height = `${el.scrollHeight}px`
+      el.style.height = `${el.scrollHeight}px`
 
       void el.offsetHeight
 
