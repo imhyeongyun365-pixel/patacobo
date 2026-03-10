@@ -18,9 +18,14 @@
 
         .inner {
             display: flex;
+           
             align-items: center;
             justify-content: flex-start;
             max-width: 164rem;
+
+            .t-wrap {
+               padding-left: 100px; 
+            }
 
              @media screen and (max-width:1111px) {
                 .t-wrap {
@@ -51,6 +56,8 @@
         }
 
         &.hs-1 {
+            
+
             h2.tit {
                 color: #fff
             }
@@ -60,22 +67,23 @@
             }
 
             a.btn {
-                background: var(--p-gradient);
+                background: #fff;
+                color: #000;
             }
         }
 
         &.hs-2 {
             h2.tit {
-                color: var(--main-slider02-tit)
+                color: #fff
             }
 
             p.txt {
-                color: var(--main-slider02-sub)
+                color: #fff
             }
 
             a.btn {
-                background: var(--s-gradient);
-
+                background: #fff;
+                color: #000;
                 &:hover {
                     color: var(--main-slider02-tit)
                 }
@@ -84,8 +92,8 @@
 
         &.hs-3 {
             .inner {
-                text-align: center;
-                justify-content: center;
+                // text-align: left;
+                // padding-left: 100px;
 
                  @media screen and (max-width:1311px) {
                  .t-wrap {
@@ -96,16 +104,16 @@
             }
 
                 h2.tit {
-                    color: var(--main-slider03-tit)
+                    color: #fff
                 }
 
                 p.txt {
-                    color: var(--main-slider03-sub)
+                    color: #fff
                 }
 
                 a.btn {
-                    background: var(--t-gradient);
-
+                    background: #fff;
+                    color: #000;
                     &:hover {
                         color: var(--main-slider03-tit)
                     }

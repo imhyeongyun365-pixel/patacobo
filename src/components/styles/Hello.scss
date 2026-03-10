@@ -15,8 +15,15 @@
         text-align: center;
         width: 63rem;
         h2.tit {
-            color:var(--primary);
+            color:#ED572C;
+            font-weight: 800;
             margin: 3rem 0 2rem;
         }
     }
+
+    a.btn {
+        background-color: #000;
+        
+    }
+    
 }

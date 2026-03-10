@@ -4,52 +4,52 @@ const img = (path) => `/img/${path}`;
 export const collectionData = [
     {
       id: 1,
-      title: '비타민 모공 수축 토너',
-      name: 'Vita Berry Pore Toner',
-      kname: '비타 베리 포어 토너 기획세트',
-      image: img('product_1.png')
+      title: 'Go Shop',
+      name: 'Climbing',
+      
+      image: img('collection-slider1-img.png')
     },
     {
       id: 2,
-      title: '비타민 모공 수축 토너',
-      name: 'Vita Berry Pore Toner',
-      kname: '비타 베리 포어 토너 기획세트',
-      image: img('product_2.png')
+      title: 'Go Shop',
+      name: 'Trail Running',
+      
+      image: img('collection-slider2-img.png')
     },
     {
       id: 3,
-      title: '비타민 모공 수축 토너',
-      name: 'Vita Berry Pore Toner',
-      kname: '비타 베리 포어 토너 기획세트',
-      image: img('product_3.png')
+      title: 'Go Shop',
+      name: 'Surfing',
+      
+      image: img('collection-slider3-img.png')
     },
     {
       id: 4,
-      title: '비타민 모공 수축 토너',
-      name: 'Vita Berry Pore Toner',
-      kname: '비타 베리 포어 토너 기획세트',
-      image: img('product_4.png')
+      title: 'Go Shop',
+      name: 'Climbing',
+     
+      image: img('collection-slider1-img.png')
     },
     {
       id: 5,
-      title: '비타민 모공 수축 토너',
-      name: 'Vita Berry Pore Toner',
-      kname: '비타 베리 포어 토너 기획세트',
-      image: img('product_5.png')
+      title: 'Go Shop',
+      name: 'Trail Running',
+      
+      image: img('collection-slider2-img.png')
     },
     {
       id: 6,
-      title: '비타민 모공 수축 토너',
-      name: 'Vita Berry Pore Toner',
-      kname: '비타 베리 포어 토너 기획세트',
-      image: img('product_6.png')
+      title: 'Go Shop',
+      name: 'Surfing',
+      
+      image: img('collection-slider3-img.png')
     },
     {
       id: 7,
-      title: '비타민 모공 수축 토너',
-      name: 'Vita Berry Pore Toner',
-      kname: '비타 베리 포어 토너 기획세트',
-      image: img('product_7.png')
+      title: 'Go Shop',
+      name: 'Trail Running',
+      
+      image: img('collection-slider2-img.png')
     }
   ]
   

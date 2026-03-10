@@ -32,7 +32,7 @@ const Collection = () => {
 
       <div className="t-wrap">
         <h2 className="tit">
-          TOCOBO <br className='mob-only'/>
+          PATACOBO <br className='mob-only'/>
            COLLECTION
         </h2>
         <p className="txt">
@@ -55,18 +55,16 @@ const Collection = () => {
           <SwiperSlide key={i}>
             <a href="#">
               <div className="info-wrap">
-                <div className="info-tit">
-                  {sl.title}
-                </div>
+              <div className="img-wrap">
+                <img src={sl.image} alt={sl.name} />
+              </div>
                 <div className="name">
                   {sl.name}
                 </div>
-                <div className="k-name">
-                  {sl.kname}
+                <div className="info-tit">
+                  {sl.title}
                 </div>
-              </div>
-              <div className="img-wrap">
-                <img src={sl.image} alt={sl.name} />
+                
               </div>
             </a>
           </SwiperSlide>

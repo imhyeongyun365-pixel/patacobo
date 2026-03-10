@@ -9,21 +9,25 @@
 
         .t-wrap {
             text-align: center;
-
         }
     }
 
     h2.tit {
-        color: var(--secondary);
+        color: #000;
+        font-weight: bold;
 
         @media screen and (max-width:1111px) {
             margin-bottom: 2rem;
         }
     }
 
-    a.btn {
-        background: var(--s-gradient);
+    p.txt {
+        font-weight: 300;
+    }
 
+    a.btn {
+        background: #000;
+        
         &:hover {
             color: var(--secondary)
         }
