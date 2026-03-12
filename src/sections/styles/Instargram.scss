@@ -1,13 +1,15 @@
 .instar-inner{
-    
+    background-color: #2f2f2f;
 
     h2.tit {
-        color: var(--secondary);
+        color: #fff;
+        font-weight: 800;
     }
     p.txt {
-        font-family: 'Source Serif Pro',serif;
-        font-size: 2rem;
-        font-style: italic;
+        
+        font-size: 1.4rem;
+        
+        color: #fff;
     }
 
     .instar-list{

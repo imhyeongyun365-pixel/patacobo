@@ -9,6 +9,7 @@ import Collection from './sections/Collection'
 import SkinCare from './sections/SkinCare'
 import Instargram from './sections/Instargram'
 import TopBanner from './components/TopBanner'
+import Review from './sections/Review'
 import FixedTopBtn from './components/FixedTopBtn'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -63,6 +64,9 @@ function App() {
         </section>
         <section id="skincare" className='section'>
           <SkinCare />
+        </section>
+        <section id="review" className='review'>
+          <Review />      
         </section>
         <section id="instargram" className='section'>
           <Instargram />

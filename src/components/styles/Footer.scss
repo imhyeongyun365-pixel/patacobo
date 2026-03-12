@@ -1,5 +1,5 @@
 footer {
-    border-top: .1rem solid var(--primary);
+    
     padding: 7rem 0 5rem;
 
     .footer-inner {
@@ -17,6 +17,10 @@ footer {
         .left {
             flex: 1;
 
+            .footer-legal p {
+                color: #000;
+            }
+            
             @media screen and (max-width:1111px) {
                 .footer-legal {
                     display: none;
@@ -34,13 +38,15 @@ footer {
 
             }
 
+            
+
 
 
         }
 
         .center {
             flex: 2;
-
+            padding-left: 100px;
             @media screen and (max-width:1111px) {
                 display: none;
             }
@@ -58,6 +64,24 @@ footer {
                         color: var(--muted);
                         margin-top: 1.2rem;
                     }
+
+                    ul {
+                        display: flex;
+                        gap: 10px;
+                        flex-wrap: wrap;
+
+                        li {
+                            
+                            background-color: #424242;
+
+                            a {
+                                padding: 0 30px 9px;
+                                color: #fff;
+                            }
+                        }
+                    }
+
+
                 }
             }
 
@@ -134,10 +158,10 @@ footer {
         }
 
         h4 {
-            color: var(--primary);
-            font-family: 'Source Serif Pro', serif;
+            color: #000;
+            
             font-size: 1.8rem;
-            font-style: italic;
+            
             margin-bottom: 2.5rem;
 
             @media screen and (max-width:1111px) {

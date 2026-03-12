@@ -21,12 +21,34 @@ export const headerData = {
             href: '#Sports',
             type: 'section'
         },
+
         {
-            id: 'Stories',
-            label: 'Stories',
-            href: '#Stories',
-            type: 'section'
-        }
+            id:'Collection',
+            label: 'Collection',
+            href: '#Collection',
+            type: 'collection'
+        },
+
+        {
+            id:'Protect',
+            label: 'Protect',
+            href: '#Protect',
+            type: 'protect'
+        },
+
+         {
+            id:'Review',
+            label: 'Review',
+            href: '#Review',
+            type: 'Review'
+        },
+
+         {
+            id:'Articles',
+            label: 'Articles',
+            href: '#Articles',
+            type: 'articles'
+        },
 
     ],
     utils: [
