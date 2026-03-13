@@ -65,7 +65,7 @@ function App() {
         <section id="skincare" className='section'>
           <SkinCare />
         </section>
-        <section id="review" className='review'>
+        <section id="review" className='section'>
           <Review />      
         </section>
         <section id="instargram" className='section'>

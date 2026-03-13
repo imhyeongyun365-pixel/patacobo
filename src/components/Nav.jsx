@@ -1,9 +1,10 @@
 import React from 'react'
 import { headerData } from '../util/header'
+import { useSmoothScroll } from '../hooks/useSmoothScroll'
 
 const Nav = () => {
     const navLinks = headerData.menus
-   
+    const scrollTo = useSmoothScroll()
     return (
         <ul className='nav-list'>
             {navLinks.map((nav) => (

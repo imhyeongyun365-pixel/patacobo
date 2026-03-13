@@ -10,44 +10,44 @@ export const headerData = {
     },
     menus: [
         {
-            id: 'Shop',
+            id: 'hero',
             label: 'Shop',
-            href: '#Shop',
+            href: '#hero',
             type: 'section'
         },
         {
-            id: 'Sports',
+            id: 'follow',
             label: 'Sports',
-            href: '#Sports',
+            href: '#follow',
             type: 'section'
         },
 
         {
-            id:'Collection',
+            id:'collection',
             label: 'Collection',
-            href: '#Collection',
+            href: '#collection',
             type: 'collection'
         },
 
         {
-            id:'Protect',
+            id:'skincare',
             label: 'Protect',
-            href: '#Protect',
+            href: '#skincare',
             type: 'protect'
         },
 
          {
-            id:'Review',
+            id:'review',
             label: 'Review',
-            href: '#Review',
+            href: '#review',
             type: 'Review'
         },
 
          {
-            id:'Articles',
+            id:'instargram',
             label: 'Articles',
-            href: '#Articles',
-            type: 'articles'
+            href: '#instargram',
+            type: 'Articles'
         },
 
     ],
