@@ -97,6 +97,8 @@ footer {
       .cus-wrap {
         width: 100%;
 
+        
+
         @media screen and (max-width:1111px) {
           border-top: .1rem solid var(--line);
           border-bottom: .1rem solid var(--line);
@@ -125,7 +127,7 @@ footer {
         .talk-btn {
           margin-top: 2rem;
           display: inline-block;
-          border: .1rem solid var(--primary);
+          
           padding: 1.4rem 7.2rem 1.3rem;
           border-radius: 4.6rem;
           font-size: 1.3rem;
