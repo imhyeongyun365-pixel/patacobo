@@ -6,9 +6,7 @@
         font-weight: 800;
     }
     p.txt {
-        
         font-size: 1.4rem;
-        
         color: #fff;
     }
 
@@ -16,14 +14,27 @@
         display: flex;
         gap: 1rem;
         margin-top: 4rem;
+
         li{
-            flex:1;
+            flex:1 1 0;
+            
+            
+            
             a{
                 display: block;
                 height: 21rem;
                 background-size: cover;
                 background-position: center;
+                
             }
         }
+        
+        @media screen and (max-width:675px) {
+            flex-wrap: wrap;
+
+            li {
+                flex: 0 0 calc(50% - 0.5rem);
+            }
+            }
     }
 }

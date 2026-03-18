@@ -127,6 +127,21 @@ const Footer = () => {
               <a className='talk-btn' href={customerCenterData.talk.href}>
                 {customerCenterData.talk.label}
               </a>
+              <ul className="sns-links">
+                {socialLinks.map((sns) => (
+                  <li key={sns.id}>
+                    <a href={sns.href}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      title={sns.label}
+                      aria-label={sns.label}>
+                      {React.createElement(sns.icon, {
+                        size: 22, "aria-hidden": true
+                      })}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
           <div className="footer-legal mob-only">
@@ -140,21 +155,6 @@ const Footer = () => {
             </div>
             <p>{footerLegal.copyright}</p>
           </div>
-          <ul className="sns-links">
-            {socialLinks.map((sns) => (
-              <li key={sns.id}>
-                <a href={sns.href}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  title={sns.label}
-                  aria-label={sns.label}>
-                  {React.createElement(sns.icon, {
-                    size: 22, "aria-hidden": true
-                  })}
-                </a>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </footer>
