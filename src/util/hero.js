@@ -6,7 +6,7 @@ export const heroSlides = [
   {
     id: "hs-1",
     title: "New Arrivals",
-    subtitle: "혹독한 테스트로 증명된 내구성과 편안함은 압도적인 자연 속에서도 당신이 더 말리, 더 높이 나아갈 수 있게 합니다.",
+    subtitle: "혹독한 테스트로 증명된 내구성과 편안함은 압도적인 자연 속에서도 당신이 더 말리,<br/> 더 높이 나아갈 수 있게 합니다.",
     desc: "피부 본연의 균형을 위한 미니멀 케어",
     ctaText: "Shop",
     ctaHref: "/products",
