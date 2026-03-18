@@ -1,5 +1,5 @@
 
-import { useState ,useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import './styles/main.scss'
 import Header from './components/Header'
 import Hero from './sections/Hero'
@@ -15,43 +15,51 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 function App() {
 
-  const [topBanner, setTopBanner]=useState('')
-  const [isScrolled, setIsScrolled]=useState(false)
+  const [topBanner, setTopBanner] = useState('')
+  const [isScrolled, setIsScrolled] = useState(false)
   const [mNavOpen, setMNavOpen] = useState(false)
+
+  const handleMNavOpen = () => setMNavOpen(true)
+  const handleMNavClose = () => setMNavOpen(false)
+
   useEffect(() => {
 
     AOS.init({
-      duration:400,
-      easing:'ease'
+      duration: 400,
+      easing: 'ease'
     });
-  },[])
+  }, [])
 
-  useEffect(()=>{
+  useEffect(() => {
 
-    document.body.style.overflow=mNavOpen?'hidden':''
-  },[mNavOpen])
-  useEffect(()=>{
+    document.body.style.overflow = mNavOpen ? 'hidden' : ''
+  }, [mNavOpen])
 
-    const handleScroll =()=>{
-      const scrollTop=window.scrollY
+  useEffect(() => {
 
-      setIsScrolled(scrollTop>200)
+    const handleScroll = () => {
+      const scrollTop = window.scrollY
+
+      setIsScrolled(scrollTop > 200)
 
       // console.log(scrollTop)
     }
 
-    window.addEventListener('scroll',handleScroll)
+    window.addEventListener('scroll', handleScroll)
 
-  },[])
+  }, [])
 
-  const upTopBanner =()=>{
+  const upTopBanner = () => {
     setTopBanner('up')
   }
   return (
-    <div className={`app-container ${topBanner} ${isScrolled? 'scrolled':''} `}>
-      <FixedTopBtn/>
-      <TopBanner  onClick={upTopBanner}/>
-      <Header mNavOpen={mNavOpen} setMNavOpen={setMNavOpen}/>
+    <div className={`app-container ${topBanner} ${isScrolled ? 'scrolled' : ''} `}>
+      <FixedTopBtn />
+      <TopBanner onClick={upTopBanner} />
+      <Header
+        onNavOpen={handleMNavOpen}
+        mNavOpen={mNavOpen}
+        onNavClose={handleMNavClose} />
       <main>
         <section id="hero" className='section'>
           <Hero />
@@ -66,7 +74,7 @@ function App() {
           <SkinCare />
         </section>
         <section id="review" className='section'>
-          <Review />      
+          <Review />
         </section>
         <section id="instargram" className='section'>
           <Instargram />
