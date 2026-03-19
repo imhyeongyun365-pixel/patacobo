@@ -11,8 +11,8 @@ export const heroSlides = [
     ctaText: "Shop",
     ctaHref: "/products",
     image: {
-      desktop: img("topbanner-slide_d-img1.png"),
-      mobile: img("topbanner-slide_m-img1.png"),
+      desktop: img("topbanner-slide_d-img1-1.png"),
+      mobile: img("topbanner-slide_m-img1-1.png"),
     },
     alt: "비건 스킨케어 히어로 배너",
     active: true,
@@ -26,8 +26,8 @@ export const heroSlides = [
     ctaText: "컬러립밤 보러가기",
     ctaHref: "/story/hydration",
     image: {
-      desktop:  img("topbanner-slide_d-img2.png"),
-      mobile: img("topbanner-slide_m-img2.png"),
+      desktop:  img("topbanner-slide_d-img2-1.png"),
+      mobile: img("topbanner-slide_m-img2-1.png"),
     },
     alt: "보습 라인 배너",
     active: true,

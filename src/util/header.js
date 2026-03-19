@@ -4,7 +4,7 @@ const img = (path) => `/img/${path}`
 export const headerData = {
 
     logo: {
-        src: img('Patagonia_white.png'),
+        src: img('header-logo-img.png'),
         alt: 'PATACOBO',
         href: '/'
     },
