@@ -51,9 +51,7 @@ const Hero = () => {
               dangerouslySetInnerHTML={{__html:slide.title}}
                />
                 
-              <p className="txt">
-                {slide.subtitle}
-              </p>
+              <p className="txt"    dangerouslySetInnerHTML={{__html:slide.subtitle}} />
               <a href={slide.ctaHref} className='btn'>
                 {slide.ctaText}
               </a>

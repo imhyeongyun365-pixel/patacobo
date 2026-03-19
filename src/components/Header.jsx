@@ -12,7 +12,7 @@ const Header = ({mNavOpen, onNavOpen, onNavClose}) => {
       <a href="#" className="mob-nav-btn"
         onClick={(e)=>{
           e.preventDefault()
-          onNavOpen
+          onNavOpen()
         }}
       >
         <img src="/img/icon_ham.svg" alt="메뉴열기" />

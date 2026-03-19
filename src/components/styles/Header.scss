@@ -3,7 +3,7 @@ header{
     top:4rem;
     width: 100%;
     z-index: 5;
-    height: 10.5rem;
+    height: 7rem;
     transition: all .3s;
 
     .inner {
@@ -27,7 +27,7 @@ header{
                 display: block;
                 font-size: 1.8rem;
                 text-transform: capitalize;
-                color:#000;
+                color:var(--header-text);
                 padding: 0 .5rem;
                 position: relative;
                 &::after{
@@ -46,7 +46,7 @@ header{
             }
 
 
-            @media screen and (max-width:1111px){
+            @media screen and (max-width:1185px){
                 display: none;
                 
             }
