@@ -4,7 +4,7 @@ import Util from './Util'
 import { headerData } from '../util/header'
 import './styles/Header.scss'
 import Mnav from './Mnav'
-const Header = ({mNavOpen, onNavOpen, onNavClose}) => {
+const Header = ({ mNavOpen, onNavOpen, onNavClose }) => {
   const headerLogo = headerData.logo
   return (
     <header>

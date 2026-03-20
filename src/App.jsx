@@ -41,6 +41,10 @@ function App() {
       const scrollTop = window.scrollY
 
       setIsScrolled(scrollTop > 0)
+      
+
+      
+
 
       // console.log(scrollTop)
     }
