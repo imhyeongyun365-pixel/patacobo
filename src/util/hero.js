@@ -20,10 +20,10 @@ export const heroSlides = [
   },
   {
     id: "hs-2",
-    title: "Hydration That Lasts",
-    subtitle: "Moisture Barrier Care",
+    title: "New Arrivals",
+    subtitle: "혹독한 테스트로 증명된 내구성과 편안함은 압도적인 자연 속에서도 당신이 더 말리,<br/> 더 높이 나아갈 수 있게 합니다.",
     desc: "가볍지만 깊게, 산뜻한 촉촉함",
-    ctaText: "컬러립밤 보러가기",
+    ctaText: "Shop",
     ctaHref: "/story/hydration",
     image: {
       desktop:  img("topbanner-slide_d-img2-1.png"),
@@ -35,10 +35,10 @@ export const heroSlides = [
   },
   {
     id: "hs-3",
-    title: "Scent-Free, Worry-Free",
-    subtitle: "Sensitive Skin Friendly",
+    title: "New Arrivals",
+    subtitle: "혹독한 테스트로 증명된 내구성과 편안함은 압도적인 자연 속에서도 당신이 더 말리,<br/> 더 높이 나아갈 수 있게 합니다.",
     desc: "민감 피부를 위한 무향 포뮬러",
-    ctaText: "스타터 키트 보러가기",
+    ctaText: "Shop",
     ctaHref: "/collections/sensitive",
     image: {
       desktop:  img("topbanner-slide_d-img3.png"),
