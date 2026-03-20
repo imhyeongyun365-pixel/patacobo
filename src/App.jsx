@@ -37,16 +37,14 @@ function App() {
 
   useEffect(() => {
 
-<<<<<<< HEAD
-      setIsScrolled(scrollTop > 0)
-
-      setIsScrolled(scrollTop>200)
-=======
     const handleScroll = () => {
       const scrollTop = window.scrollY
 
-      setIsScrolled(scrollTop > 200)
->>>>>>> c54824d79381f4d5798dc2018dbee68169165327
+      setIsScrolled(scrollTop > 0)
+      
+
+      
+
 
       // console.log(scrollTop)
     }
