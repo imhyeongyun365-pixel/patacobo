@@ -40,7 +40,11 @@ function App() {
     const handleScroll = () => {
       const scrollTop = window.scrollY
 
-      setIsScrolled(scrollTop > 200)
+      setIsScrolled(scrollTop > 0)
+      
+
+      
+
 
       // console.log(scrollTop)
     }
