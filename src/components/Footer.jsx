@@ -15,6 +15,22 @@ const Footer = () => {
   const hiddenContentRef=useRef(null) 
 
   useEffect(()=>{
+    const handleResize =()=>{
+      setIsOpen(window.innerWidth>=1111)
+    }
+    handleResize()
+
+    window.addEventListener('resize',handleResize)
+
+
+    return ()=>window.removeEventListener('resize',handleResize)
+
+
+
+  },[])
+
+
+  useEffect(()=>{
     const el = hiddenContentRef.current
 
     if(isOpen) {
