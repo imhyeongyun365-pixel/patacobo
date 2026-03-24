@@ -17,6 +17,10 @@
         height: 45rem;
     }
     
+    @media screen and (max-width:512px) {
+        width: 100%;
+        
+    }
 
     .t-wrap {
         text-align: center;

@@ -5,6 +5,10 @@
 
     &#follow {
         background-color: #f4f4f4;
+        
+        @media screen and (max-width:512px) {
+        width: 512px;
+    }
     }
 
     &#hero {
@@ -13,9 +17,15 @@
         transition: margin-top .3s;
     }
 
+   
+
     &#collection {
         background-color: #fff;
         padding: 10rem 0;
+
+        @media screen and (max-width:512px) {
+        width: 512px;
+    }
     }
 
     &#skincare {
@@ -33,17 +43,34 @@
             @media screen and (max-width:1111px) {
                 height: 15rem;
             }
+            
         }
+        @media screen and (max-width:512px) {
+        width: 512px;
+    }
     }
 
     &#review {
         padding: 0;
         background-color: #f4f4f4;
+        @media screen and (max-width:512px) {
+        width: 512px;
+    }
     }
 
     &#instargram {
         background-color: #2f2f2f;
 
+        @media screen and (max-width:512px) {
+        width: 512px;
+    }
+
+    }
+
+    &#footer {
+        @media screen and (max-width:512px) {
+        width: 512px;
+    }
     }
 
     h2.tit {
@@ -143,6 +170,11 @@ footer {
     }
 }
 
+.footer {
+    @media screen and (max-width:512px) {
+        width: 512px;
+    }
+}
 
 
 

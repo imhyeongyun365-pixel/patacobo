@@ -84,6 +84,7 @@ function App() {
           <Instargram />
         </section>
       </main>
+      
       <Footer />
     </div>
   )

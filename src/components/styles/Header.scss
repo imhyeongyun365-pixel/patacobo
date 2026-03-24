@@ -5,19 +5,25 @@ header{
     z-index: 5;
     height: 7rem;
     transition: all .3s;
-
+    @media screen and (max-width:512px) {
+        width: 100%;
+        
+    }
+    
     .inner {
         max-width: 160rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         .mob-nav-btn{
             display: none;
-
-            @media screen and (max-width:1185px){
             
+            @media screen and (max-width:1185px){
+                
                 display: block;
             }
+
         }
 
         .nav-list{
@@ -62,7 +68,7 @@ header{
             gap: 1.2rem;
             li{
 
-                @media screen and (max-width:1111px){
+                @media screen and (max-width:1185px){
                     
                     &:not(:last-child){
                         display: none;
