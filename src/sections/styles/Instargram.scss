@@ -10,6 +10,11 @@
         color: #fff;
     }
 
+    @media screen and (max-width:512px) {
+        width: 100%;
+        
+    }
+
     .instar-list{
         display: flex;
         gap: 1rem;

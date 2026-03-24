@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, {useState,useEffect,useRef} from 'react'
 import {
   logoData,
   companyData,
@@ -11,52 +11,39 @@ import './styles/Footer.scss'
 
 const Footer = () => {
 
-  const [isOpen, setIsOpen] = useState(false)
-  const hiddenContentRef = useRef(null)
-
+  const [isOpen, setIsOpen]=useState(false)
+  const hiddenContentRef=useRef(null) 
   useEffect(()=>{
-    const handleResize =()=>{
-      setIsOpen(window.innerWidth>=1111)
+    const handleResize = ()=>{
+      setIsOpen(window.innerWidth >= 1111)
     }
-    handleResize()
 
-    window.addEventListener('resize',handleResize)
+    handleResize() // 최초 실행
 
-
-    return ()=>window.removeEventListener('resize',handleResize)
-
-
-
+    window.addEventListener('resize', handleResize)
+    return ()=> window.removeEventListener('resize', handleResize)
   },[])
-
-
-  useEffect(() => {
-
+  useEffect(()=>{
     const el = hiddenContentRef.current
-    
 
-    if (isOpen) {
+    if(isOpen) {
       el.style.height = `${el.scrollHeight}px`
       
-      const onTransitionEnd = () => {
-        el.style.height = 'auto'
-        el.removeEventListener('transitionend', onTransitionEnd)
+      const onTransitionEnd =()=>{
+        el.style.height='auto'
+        el.removeEventLintener('transitionend',onTransitionEnd)
       }
-      el.addEventListener('transitionend', onTransitionEnd)
-    } else {
       
+      el.addEventListener('transitionend',onTransitionEnd)
+    } else {
+
       el.style.height = `${el.scrollHeight}px`
 
-      void el.offsetHeight
-
+      void el.offsetHeight 
       el.style.height='0px'
-
     }
-
-
-  }, [isOpen])
-
-  return (
+  },[isOpen])
+    return (
     <footer>
 
       <div className='inner footer-inner'>
@@ -106,14 +93,12 @@ const Footer = () => {
         </div>
         <div className="right">
           <div 
-          onClick={()=>{
-            if (window.innerWidth >= 1111) return
-            setIsOpen(prevStatus=>!prevStatus)}}
-          className={`cus-wrap ${isOpen ? "open" : ""}`}>
+          onClick={()=>setIsOpen(prevStatus=>!prevStatus)}
+          className={`cus-wrap ${isOpen ? "open": ""}`}>
             <h4>
               {customerCenterData.title}
               <span className="mob-only m-plus">
-
+              
               </span>
             </h4>
             <div className="hidden" ref={hiddenContentRef}>
@@ -127,21 +112,6 @@ const Footer = () => {
               <a className='talk-btn' href={customerCenterData.talk.href}>
                 {customerCenterData.talk.label}
               </a>
-              <ul className="sns-links">
-                {socialLinks.map((sns) => (
-                  <li key={sns.id}>
-                    <a href={sns.href}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      title={sns.label}
-                      aria-label={sns.label}>
-                      {React.createElement(sns.icon, {
-                        size: 22, "aria-hidden": true
-                      })}
-                    </a>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
           <div className="footer-legal mob-only">
@@ -155,6 +125,21 @@ const Footer = () => {
             </div>
             <p>{footerLegal.copyright}</p>
           </div>
+          <ul className="sns-links">
+            {socialLinks.map((sns) => (
+              <li key={sns.id}>
+                <a href={sns.href}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  title={sns.label}
+                  aria-label={sns.label}>
+                  {React.createElement(sns.icon, {
+                    size: 22, "aria-hidden": true
+                  })}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </footer>

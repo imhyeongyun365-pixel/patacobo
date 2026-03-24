@@ -1,7 +1,10 @@
 .collection-inner {
     text-align: center;
 
-    
+    @media screen and (max-width:512px) {
+        width: 100%;
+        
+    }
 
     h2.tit {
         color: #000;
