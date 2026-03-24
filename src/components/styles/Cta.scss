@@ -1,4 +1,10 @@
 .cta-inner{
+
+    @media screen and (max-width:512px) {
+        width: 100%;
+        
+    }
+
     .cta-list{
         display: flex;
         justify-content: center;

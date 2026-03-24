@@ -19,6 +19,12 @@
       color: #555;
     }
   }
+
+  @media screen and (max-width:512px) {
+        width: 100%;
+        
+    }
+
 }
 
 .review-swiper {
